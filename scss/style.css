@@ -30,9 +30,9 @@ h4 {
   font-weight: 600; }
 
 p {
+  font-size: 18px;
   font-weight: normal;
-  line-height: 1.5;
-  font-size: 18px; }
+  line-height: 1.5; }
 
 .pg-wrapper {
   padding: 1rem;
@@ -49,21 +49,21 @@ p {
 
 .cta {
   background: #f44336;
-  text-transform: uppercase;
-  padding: 1rem;
   border-radius: 3px;
+  display: block;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
   width: 140px;
-  display: block;
-  text-align: center; }
+  transition: .2s; }
   .cta, .cta:link, .cta:visited, .cta:hover {
     color: #FFF; }
   .cta:hover {
-    box-shadow: -7px -6px 0px #f77066;
     background: #ea1c0d;
-    transition: .4s; }
+    box-shadow: -7px -6px 0px #f77066; }
 
 .accent {
   color: #f44336; }

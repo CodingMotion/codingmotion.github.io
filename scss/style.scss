@@ -98,7 +98,6 @@ p {
   }
 }
 
-
 .cta  {
   background: $primary-color;
   border-radius: 3px;
@@ -110,6 +109,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   width: 140px;
+  transition: .2s;
 
   &,
   &:link,
@@ -121,7 +121,6 @@ p {
   &:hover {
     background: darken($primary-color, 10%);
     box-shadow: -7px -6px 0px lighten($primary-color, 10%);
-    transition: .4s;
   }
 }
 
