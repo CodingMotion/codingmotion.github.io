@@ -1,0 +1,142 @@
+// Vars
+
+// Font sizes
+$body: 1rem; //16px
+
+// font weight
+$regular: 400;
+$bold: 600;
+
+// Colors
+$black: #000;
+$white: #FFF;
+$primary-color: #f44336;
+
+// Typography
+$raleway-font-stack: 'Raleway', sans-serif;
+
+
+// Layout & media queries
+
+$lg-screen: 'screen and (min-width: 60rem)';
+$sm-screen: 'screen and (min-width: 30rem)';
+$pg-wrapper-width: 40rem;
+
+// Reset
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $raleway-font-stack;
+  justify-content: center;
+}
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+a {
+  &,
+  &:link,
+  &:active {
+    color: $primary-color;
+    font-weight: $bold;
+    text-decoration: none;
+  }
+
+  &:hover {
+  }
+}
+
+h1 {
+  border-bottom: 12px solid $primary-color;
+  width: 102px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $raleway-font-stack;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+
+// Layout
+.pg-wrapper {
+  padding: 1rem;
+  position: relative;
+
+  @media #{$lg-screen} {
+    padding: 5rem 0;
+    max-width: $pg-wrapper-width;
+    margin: 0 auto;
+  }
+}
+
+// Power Pitch
+.power-pitch {
+  @media #{$lg-screen} {
+    margin-top: 3rem;
+  }
+}
+
+
+.cta  {
+  background: $primary-color;
+  border-radius: 3px;
+  display: block;
+  font-size: $body;
+  font-weight: $bold;
+  letter-spacing: 2px;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 140px;
+
+  &,
+  &:link,
+  &:visited,
+  &:hover {
+    color: $white;
+  }
+
+  &:hover {
+    background: darken($primary-color, 10%);
+    box-shadow: -7px -6px 0px lighten($primary-color, 10%);
+    transition: .4s;
+  }
+}
+
+// helpers
+
+.accent {
+  color: $primary-color;
+}
+
+.inline {
+  display: inline;
+}
+
+.sign-up {
+  @media #{$lg-screen} {
+    margin-top: 4rem;
+  }
+}
